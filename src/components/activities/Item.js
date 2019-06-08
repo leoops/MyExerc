@@ -23,8 +23,9 @@ class Item extends Component {
   }
 
   /**
-   * Método de definição de cor dependendo do dia da atividade física
-   *
+   * @memberof Item
+   * @method defineColor
+   * @description Método de definição de cor dependendo do dia da atividade física
    * @param {string} when - Dia que a atividade foi realizada
    * @returns {string}
    * @memberof Item
@@ -41,8 +42,9 @@ class Item extends Component {
   }
 
   /**
-   * Método de calculo de tempo calculado
-   *
+   * @memberof Item
+   * @method calculateHours
+   * @description Método de calculo de tempo calculado
    * @param {number} time - Tempo levado pelo usuário na atividade
    * @returns {string}
    * @memberof Item
@@ -118,7 +120,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.GRAY_SHADOW,
   },
   title: {
-    fontSize: fonts.BIG,
+    fontSize: fonts.,
     fontFamily: 'Montserrat-SemiBold',
     color: colors.WHITE,
   },

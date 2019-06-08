@@ -27,20 +27,13 @@ class MainScreen extends Component {
   }
 
   /**
-   * Método de seleção de item de filtro
    * @instance
    * @memberof MainScreen
+   * @method onHandlerFilter
+   * @description Método de seleção de item de filtro
    * @param {string} name - Item clicado pelo usuário
    */
-  onHandlerFilter = name => {
-    switch (name) {
-      case value:
-        break;
-
-      default:
-        break;
-    }
-  };
+  onHandlerFilter = name => {};
 
   render = () => {
     const { list, filters } = this.state;

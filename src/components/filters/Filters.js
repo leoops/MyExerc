@@ -17,11 +17,11 @@ class Filters extends Component {
   }
 
   /**
-   * Método de definição de imagem para item de filtro
-   *
+   * @memberof Filters
+   * @method defineImage
+   * @description Método de definição de imagem para item de filtro
    * @param {string} image - Nome da image;
    * @returns {number}
-   * @memberof Filters
    */
   defineImage = image => {
     switch (image) {
@@ -45,17 +45,25 @@ class Filters extends Component {
   };
 
   /**
+   * @memberof Filters
    * @method keyExtractor
    * @description Método de definição de chave para item de lista
-   * @param {string} { name } - Nome do item.
+   * @param {string} name - Nome do item.
    * @param {number} index - Posição do item na lista.
    * @returns {string}
-   * @memberof Filters
    */
   keyExtractor = ({ name }, index) => {
     return `${name}.${index}`;
   };
 
+  /**
+   * @memberof Filters
+   * @method renderItem
+   * @description Método de montagem de item para lista.
+   * @param {string} name - Nome do item.
+   * @param {string} image - Referência da image.
+   * @returns {node}
+   */
   renderItem = ({ item: { name, image } }) => {
     const { onPress } = this.props;
     const srcImage = this.defineImage(image);
@@ -90,8 +98,6 @@ Filters.propTypes = {
     })
   ),
 };
-
-Filters.defaultProps = {};
 
 const styles = StyleSheet.create({
   container: {

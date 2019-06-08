@@ -15,12 +15,26 @@ class ActivitiesLIst extends Component {
     this.state = {};
   }
 
-  // key extractor
+  /**
+   * @memberof ActivitiesLIst
+   * @method keyExtractor
+   * @description Método de definição de chave para item de lista
+   * @param {string} name - Nome do item.
+   * @param {number} index - Posição do item na lista.
+   * @returns {string}
+   */
   keyExtractor = (item, index) => {
     const { name } = item;
     return `${name}.${index}`;
   };
 
+  /**
+   * @memberof Item
+   * @method defineImage
+   * @description Método de definição de imagem
+   * @param {string} image - Referência de imagem a ser exibida
+   * @returns {number}
+   */
   defineImage = image => {
     switch (image) {
       case 'img/running.png':
@@ -36,7 +50,18 @@ class ActivitiesLIst extends Component {
     }
   };
 
-  // render item
+  /**
+   * @memberof ActivitiesLIst
+   * @method renderItem
+   * @description Método de montagem de item para lista.
+   * @param {string} name - Nome do item.
+   * @param {string} image - Referência da image.
+   * @param {string} calories - Calorias gastas.
+   * @param {string} time - Tempo gasto.
+   * @param {string} weight - Peso do usuário.
+   * @param {string} when - Dia da atividade.
+   * @returns {node}
+   */
   renderItem = ({ item: { name, image, calories, time, weight, when } }) => {
     const srcImage = this.defineImage(image);
     return (

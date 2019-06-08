@@ -19,12 +19,22 @@ class FilterButton extends Component {
     };
   }
 
+  /**
+   * @memberof FilterButton
+   * @method onPress
+   * @description Método de clique de filtro
+   */
   onPress = () => {
     const { selected } = this.state;
 
     this.setState({ selected: !selected }, this.onChange);
   };
 
+  /**
+   * @memberof FilterButton
+   * @method onChange
+   * @description Método de mudança de estado de filtro
+   */
   onChange = () => {
     const { name, onChange } = this.props;
     if (onChange) {
