@@ -1,7 +1,8 @@
 export default (colors = {
   WHITE: '#FEFFFF',
+  WHITE_LIGHT: '#FEFFFF88',
   VIOLET: '#7F38F4',
-  GREEN_ESMERALD: '#19B996',
+  GREEN_EMERALD: '#19B996',
   RED: '#F22B48',
   RED_SCARLET: '#FD3C29',
   GRAY_IRON: '#262F38',
