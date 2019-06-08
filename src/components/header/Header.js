@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { View, Text, StyleSheet } from 'react-native';
-import { colors } from '../../assets';
+import { colors, fonts } from '../../assets';
 
 /**
  * Componente de cabeçalho para a tela.
@@ -20,7 +20,9 @@ class Header extends Component {
     return (
       <View style={styles.container}>
         {left}
-        <Text style={{ fontSize: 28, color: colors.WHITE }}>{label}</Text>
+        <Text style={{ fontSize: fonts.GIANT, color: colors.WHITE }}>
+          {label}
+        </Text>
         {right}
       </View>
     );
@@ -43,7 +45,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   label: {
-    fontSize: 28,
+    fontSize: fonts.GIANT,
     color: colors.WHITE,
   },
 });

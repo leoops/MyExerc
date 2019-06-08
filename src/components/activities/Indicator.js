@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { View, Text, StyleSheet } from 'react-native';
-import { colors } from '../../assets';
+import { colors, fonts } from '../../assets';
 
 /**
  * Componente de item de indicativo de dia de exercícios.
@@ -59,7 +59,7 @@ styles = StyleSheet.create({
     opacity: 0.7,
     marginRight: 10,
   },
-  label: { fontSize: 10, color: colors.WHITE },
+  label: { fontSize: fonts.SMALL, color: colors.WHITE },
 });
 
 export default Indicator;

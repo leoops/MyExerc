@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { View, Text, Image, StyleSheet } from 'react-native';
-import { colors } from '../../assets';
+import { colors, fonts } from '../../assets';
 import { ItemDetail, Indicator } from '..';
 import timeIcon from '../../../img/ic_time.png';
 import bikeIcon from '../../../img/ic_bike.png';
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.GRAY_SHADOW,
   },
   title: {
-    fontSize: 24,
+    fontSize: fonts.BIG,
     fontFamily: 'Montserrat-SemiBold',
     color: colors.WHITE,
   },
