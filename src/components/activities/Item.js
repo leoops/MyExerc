@@ -116,11 +116,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     margin: 16,
     padding: 20,
+    paddingRight: 10,
     borderRadius: 10,
     backgroundColor: colors.GRAY_SHADOW,
   },
   title: {
-    fontSize: fonts.,
+    fontSize: fonts.BIG,
     fontFamily: 'Montserrat-SemiBold',
     color: colors.WHITE,
   },
@@ -130,8 +131,7 @@ const styles = StyleSheet.create({
   },
   detailContainer: {
     flex: 1,
-    paddingLeft: 30,
-    paddingRight: 10,
+    paddingLeft: 10,
     justifyContent: 'space-around',
   },
   image: {
